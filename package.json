@@ -1,24 +1,20 @@
 {
-  "name": "lighthouse-ci",
-  "version": "0.0.2",
-  "author": "Eric Bidelman <ebidel@>",
+  "private": true,
+  "description": "Lighthouse CI",
+  "main": "index.js",
   "license": "Apache-2.0",
-  "description": "Lighthouse CI Runner",
-  "main": "runlighthouse.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ebidel/lighthouse-ci.git"
+  "scripts": {
+    "start": "node server.js"
   },
-  "bugs": {
-    "url": "https://github.com/ebidel/lighthouse-ci/issues"
+  "engines": {
+    "node": ">=7.7.0"
   },
-  "homepage": "https://github.com/ebidel/lighthouse-ci#readme",
   "dependencies": {
-    "minimist": "^1.2.0",
+    "body-parser": "^1.17.1",
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.8.0",
+    "express": "^4.15.2",
+    "github": "^9.2.0",
     "node-fetch": "^1.6.3"
-  },
-  "devDependencies": {
-    "eslint": "^3.18.0",
-    "eslint-config-google": "^0.8.0"
   }
 }
