@@ -27,7 +27,7 @@ class LighthouseCI {
    */
   constructor(token) {
     this.github = new Github({debug: false, Promise: Promise});
-    this.github.authenticate({type: 'oauth', token});
+    this.github.authenticate({type: 'oauth', token: process.env.OAuth});
   }
 
   handleError(err, prInfo) {
